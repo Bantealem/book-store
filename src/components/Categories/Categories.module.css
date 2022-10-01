@@ -1,0 +1,24 @@
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  margin: 0;
+}
+
+.categories-container button {
+  font-size: 1rem;
+  font-weight: 600;
+  color: wheat;
+  background: #222;
+  width: 20rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(51, 255, 0);
+  margin: 0;
+}

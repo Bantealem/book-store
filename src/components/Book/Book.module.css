@@ -1,0 +1,25 @@
+.book-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 1rem;
+  border: 2px solid rgb(35, 78, 34);
+  width: 100%;
+  padding: 1rem;
+  margin: 0;
+}
+
+.delete-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: wheat;
+  background: rgb(6, 255, 47);
+  width: 10rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(5, 248, 208);
+  margin: 0;
+}
