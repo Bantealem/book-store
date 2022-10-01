@@ -1,4 +1,4 @@
-# Math Magicians
+# Book Store
 
 > This is project is part of Microverse **React** curriculum called the **Bookstore** application. This application will be developed using the **React** framework. 
 
