@@ -5,7 +5,7 @@
   justify-content: space-between;
   text-align: center;
   border-radius: 1rem;
-  border: 2px solid rgb(35, 78, 34);
+  border: 2px solid #40005d;
   width: 100%;
   padding: 1rem;
   margin: 0;
@@ -15,11 +15,11 @@
   font-size: 1rem;
   font-weight: 600;
   color: wheat;
-  background: rgb(6, 255, 47);
+  background: #40005d;
   width: 10rem;
   height: 3rem;
   padding: 0.5rem;
   border-radius: 1rem;
-  border: 2px solid rgb(5, 248, 208);
+  border: 2px solid #40005d;
   margin: 0;
 }
