@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #222;
+  background: #40005d;
   text-align: center;
   height: 4rem;
   width: 100%;
@@ -25,7 +25,7 @@
 }
 
 .nav-item {
-  color: wheat;
+  color: #40005d;
   text-decoration: none;
 }
 

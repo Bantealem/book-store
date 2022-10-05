@@ -7,9 +7,21 @@ import styles from './BookList.module.css';
 const BookList = () => {
   function getInitialBooks() {
     const books = [
-      { id: uuidv4(), title: '12 Rules of life', author: 'Jordan Peterson' },
-      { id: uuidv4(), title: 'Baron a crime', author: 'Stefen' },
-      { id: uuidv4(), title: 'The confession', author: 'Augestine' },
+      {
+        id: uuidv4(),
+        title: '12 Rules of life',
+        author: 'Jordan Peterson',
+      },
+      {
+        id: uuidv4(),
+        title: 'Baron a crime',
+        author: 'Stefen',
+      },
+      {
+        id: uuidv4(),
+        title: 'The confession',
+        author: 'Augestine',
+      },
     ];
     if (books) {
       return books;
