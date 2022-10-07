@@ -2,7 +2,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./Categories.module.css";
-import { checkStatus } from "../../redux/categories/Categories";
+import { checkStatus } from "../../redux/categories/categories";
 
 const Categories = () => {
   const symbol = useSelector((state) => state.categories);
