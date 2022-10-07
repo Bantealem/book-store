@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from "react-redux";
-import { addBooks } from "../../Redux/Books/Books";
+import { addBooks } from "../../redux/Books/Books";
 import styles from "./AddBook.module.css";
 
 const AddBook = () => {
