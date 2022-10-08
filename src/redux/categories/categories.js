@@ -1,18 +1,18 @@
-/* eslint-disable */
+const CHECK_STATUS = 'bookStore/categories/CHECK_STATUS';
 
-const CHECK_STATUS = 'CHECK_STATUS';
+export const initialState = [];
 
-const initialState = [];
-
-export default function reducer(state = initialState, action) {
+export default function categoriesReducer(state = initialState, action = {}) {
   switch (action.type) {
     case CHECK_STATUS:
-      return 'Under construction';
-
+      return [...state, 'Under construction'];
     default:
       return state;
   }
 }
-export const checkStatus = () => ({
-  type: CHECK_STATUS,
-});
+
+export function checkStatus() {
+  return {
+    type: CHECK_STATUS,
+  };
+}
