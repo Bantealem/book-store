@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import Books from './Books';
 import AddBook from './AddBook';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchBook } from '../redux/books/books';
+import { fetchBook } from '../redux/Books/Books';
 
 const BooksList = () => {
   const { books } = useSelector((state) => state.books);
