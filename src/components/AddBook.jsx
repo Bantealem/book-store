@@ -17,7 +17,6 @@ const AddBook = () => {
 
   const bookState = (e) => {
     e.preventDefault();
-    // if (!inputState.title.trim() || !inputState.author.trim()) return;
     const book = {
       item_id: uuidv4(),
       ...inputState,
