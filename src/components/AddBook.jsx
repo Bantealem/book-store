@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/Books/Books';
+import style from './AddBook.module.css';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -17,6 +18,7 @@ const AddBook = () => {
 
   const bookState = (e) => {
     e.preventDefault();
+    // if (!inputState.title.trim() || !inputState.author.trim()) return;
     const book = {
       item_id: uuidv4(),
       ...inputState,
@@ -26,22 +28,28 @@ const AddBook = () => {
   };
   return (
     <div>
+      <h2 className={style.heading}>ADD NEW BOOK</h2>
       <form onSubmit={bookState}>
         <input
+          className={style.panel}
           type="text"
-          placeholder="title"
+          placeholder="Title"
+          required="required"
           value={inputState.title}
           onChange={changeState}
           name="title"
         />
         <input
+          className={style.panel}
           type="text"
-          placeholder="author"
+          placeholder="Author"
           value={inputState.author}
           onChange={changeState}
           name="author"
+          required="required"
         />
         <select
+          className={style.panel}
           value={inputState.category}
           onChange={changeState}
           name="category"
@@ -51,7 +59,9 @@ const AddBook = () => {
           <option>Action</option>
           <option>Crime</option>
         </select>
-        <button type="submit">Add book</button>
+        <button type="submit" className={style.btn}>
+          ADD BOOK
+        </button>
       </form>
     </div>
   );
