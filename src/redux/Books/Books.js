@@ -1,25 +1,31 @@
+const ADD = 'ADD';
+const DELETE = 'DELETE';
 // Reducer
-const initialState = [];
+const initialState = [
+  {
+    title: 'Fikr Eske Mekabr',
+    author: 'Haddis Alemayehu',
+  },
+];
 const bookReducer = (state = initialState, action = {}) => {
   switch (action.type) {
+    case ADD:
+      return [...state, action.book];
+    case DELETE:
+      return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }
 };
-// Action Creator
-const addBooks = (payload) => ({
-  type: 'add',
-  payload,
+// Action for add books
+export const addBooks = (book) => ({
+  type: ADD,
+  payload: book,
 });
-
-const removeBooks = (payload) => ({
+// Action for remove books
+export const deleteBooks = (id) => ({
   type: 'remove',
-  payload,
+  payload: id,
 });
-
-// selector
-const getBooks = (state) => state.books;
-
-export { addBooks, removeBooks, getBooks };
 
 export default bookReducer;
