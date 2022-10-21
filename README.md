@@ -31,6 +31,10 @@ To get a local copy up and running follow these simple example steps.
 - Open the **Command Prompt (CMD)** in the current directory (Microverse Folder).
 - Run the following command:
 
+## Live Demo
+
+[Live](https://soft-cajeta-ee544f.netlify.app/)
+
 ```
 $ git clone https://github.com/Bantealem/book-store.git
 ```
